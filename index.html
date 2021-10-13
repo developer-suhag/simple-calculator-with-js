@@ -21,17 +21,21 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body class="bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500 p-8">
+  <body class="p-8">
     <header>
       <div class="flex justify-center mb-6">
         <img src="images/calculator (1).png" alt="" />
       </div>
-      <h1 class="text-5xl uppercase text-center font-bold text-purple-100">
+      <h1
+        class="text-5xl uppercase text-center font-bold text-indigo-700 title"
+      >
         Simple JavaScript Calculator
       </h1>
     </header>
     <main>
-      <section class="p-8 w-1/4 mx-auto bg-gray-200 m-8 rounded-2xl shadow-2xl">
+      <section
+        class="p-2 lg:p-8 w-1/4 mx-auto bg-gray-200 m-8 rounded-2xl shadow-2xl"
+      >
         <div class="calculatior">
           <div
             class="
@@ -74,7 +78,14 @@
             <div class="body-top grid grid-cols-4 gap-2">
               <button
                 id="clear"
-                class="col-span-2 colored-bg font-medium p-2 rounded"
+                class="
+                  col-span-2
+                  colored-bg
+                  font-medium
+                  p-2
+                  rounded
+                  normal-text
+                "
                 data-all-clear
               >
                 AC
@@ -84,7 +95,7 @@
                 value="back-space"
                 data-delete
               >
-                DEL
+                <
               </button>
               <button
                 id="division"

@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  background: linear-gradient(
+      120deg,
+      rgba(132, 250, 175, 0.7) 20%,
+      rgba(143, 210, 244, 0.5) 100%
+    ),
+    url(../images/bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.title {
+  color: #2e2e2e;
+}
+
 button,
 input {
   font-family: "Style Script", cursive;
@@ -11,4 +27,8 @@ input {
 
 .calculator-top {
   min-height: 80px !important;
+}
+
+.normal-text {
+  font-family: "Open Sans", sans-serif;
 }
