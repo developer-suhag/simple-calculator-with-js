@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple JavaScript Calculator</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- Tailwind css  -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      button,
+      input {
+        font-family: "Style Script", cursive;
+      }
+      .colored-bg {
+        background: #16a085;
+      }
+      .colored-bg:hover {
+        background: #1abc9c;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500 p-8">
+    <header>
+      <div class="flex justify-center mb-6">
+        <img src="images/calculator (1).png" alt="" />
+      </div>
+      <h1 class="text-5xl uppercase text-center font-bold text-purple-100">
+        Simple JavaScript Calculator
+      </h1>
+    </header>
+    <main>
+      <section class="p-8 w-1/4 mx-auto bg-gray-200 m-8 rounded-2xl shadow-2xl">
+        <div class="calculatior">
+          <div
+            class="
+              calculator-top
+              h-20
+              py-2
+              px-6
+              bg-gray-600
+              rounded
+              text-white
+              flex
+              items-end
+              flex-col
+            "
+          >
+            <input
+              type="text"
+              id="output-field"
+              class="
+                w-full
+                h-16
+                bg-transparent
+                outline-none
+                text-right text-2xl
+              "
+            />
+            <!-- <div id="previous-operand" class="text-sm">55</div>
+            <div id="current-operand" class="text-2xl">70</div> -->
+          </div>
+          <div class="calculator-body p-4 text-white text-2xl">
+            <div class="body-top grid grid-cols-4 gap-2">
+              <button
+                id="clear"
+                class="col-span-3 colored-bg font-medium p-2 rounded"
+              >
+                AC
+              </button>
+              <!-- <button
+                class="colored-bg font-medium p-2 rounded"
+                value="back-space"
+              >
+                DEL
+              </button> -->
+              <button
+                id="division"
+                class="colored-bg font-medium p-2 rounded operator"
+              >
+                /
+              </button>
+            </div>
+            <div class="body-bottom grid grid-cols-4 gap-2 my-4">
+              <button
+                id="seven"
+                class="colored-bg font-medium p-2 rounded number"
+              >
+                7
+              </button>
+              <button
+                id="eight"
+                class="colored-bg font-medium p-2 rounded number"
+              >
+                8
+              </button>
+              <button
+                id="nine"
+                class="colored-bg font-medium p-2 rounded number"
+              >
+                9
+              </button>
+              <button
+                id="multipy"
+                class="colored-bg font-medium p-2 rounded operator"
+              >
+                *
+              </button>
+              <button
+                id="four"
+                class="colored-bg font-medium p-2 rounded number"
+              >
+                4
+              </button>
+              <button
+                id="five"
+                class="colored-bg font-medium p-2 rounded number"
+              >
+                5
+              </button>
+              <button
+                id="six"
+                class="colored-bg font-medium p-2 rounded number"
+                value="6"
+              >
+                6
+              </button>
+              <button
+                id="addition"
+                class="colored-bg font-medium p-2 rounded operator"
+              >
+                +
+              </button>
+              <button
+                id="one"
+                class="colored-bg font-medium p-2 rounded number"
+              >
+                1
+              </button>
+              <button
+                id="two"
+                class="colored-bg font-medium p-2 rounded number"
+              >
+                2
+              </button>
+              <button
+                id="three"
+                class="colored-bg font-medium p-2 rounded number"
+              >
+                3
+              </button>
+              <button
+                id="subtrac"
+                class="colored-bg font-medium p-2 rounded operator"
+              >
+                -
+              </button>
+              <button
+                id="zero"
+                class="colored-bg font-medium p-2 rounded number"
+              >
+                0
+              </button>
+              <!-- <button
+                class="colored-bg font-medium p-2 rounded operator"
+                value="."
+              >
+                .
+              </button> -->
+              <button
+                type="submit"
+                class="col-span-3 colored-bg font-medium p-2 rounded operator"
+                id="equal"
+              >
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
