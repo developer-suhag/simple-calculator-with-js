@@ -1,0 +1,14 @@
+button,
+input {
+  font-family: "Style Script", cursive;
+}
+.colored-bg {
+  background: #16a085;
+}
+.colored-bg:hover {
+  background: #1abc9c;
+}
+
+.calculator-top {
+  min-height: 80px !important;
+}

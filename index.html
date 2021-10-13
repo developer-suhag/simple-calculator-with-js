@@ -19,18 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap"
       rel="stylesheet"
     />
-    <style>
-      button,
-      input {
-        font-family: "Style Script", cursive;
-      }
-      .colored-bg {
-        background: #16a085;
-      }
-      .colored-bg:hover {
-        background: #1abc9c;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body class="bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500 p-8">
     <header>
@@ -47,7 +36,7 @@
           <div
             class="
               calculator-top
-              h-20
+              h-30
               py-2
               px-6
               bg-gray-600
@@ -56,9 +45,10 @@
               flex
               items-end
               flex-col
+              break-all
             "
           >
-            <input
+            <!-- <input
               type="text"
               id="output-field"
               class="
@@ -68,27 +58,38 @@
                 outline-none
                 text-right text-2xl
               "
-            />
-            <!-- <div id="previous-operand" class="text-sm">55</div>
-            <div id="current-operand" class="text-2xl">70</div> -->
+            /> -->
+            <div
+              data-previous-operand
+              id="previous-operand"
+              class="text-sm"
+            ></div>
+            <div
+              data-current-operand
+              id="current-operand"
+              class="text-3xl font-bold tracking-wider"
+            ></div>
           </div>
           <div class="calculator-body p-4 text-white text-2xl">
             <div class="body-top grid grid-cols-4 gap-2">
               <button
                 id="clear"
-                class="col-span-3 colored-bg font-medium p-2 rounded"
+                class="col-span-2 colored-bg font-medium p-2 rounded"
+                data-all-clear
               >
                 AC
               </button>
-              <!-- <button
+              <button
                 class="colored-bg font-medium p-2 rounded"
                 value="back-space"
+                data-delete
               >
                 DEL
-              </button> -->
+              </button>
               <button
                 id="division"
                 class="colored-bg font-medium p-2 rounded operator"
+                data-operation
               >
                 /
               </button>
@@ -97,36 +98,42 @@
               <button
                 id="seven"
                 class="colored-bg font-medium p-2 rounded number"
+                data-number
               >
                 7
               </button>
               <button
                 id="eight"
                 class="colored-bg font-medium p-2 rounded number"
+                data-number
               >
                 8
               </button>
               <button
                 id="nine"
                 class="colored-bg font-medium p-2 rounded number"
+                data-number
               >
                 9
               </button>
               <button
                 id="multipy"
                 class="colored-bg font-medium p-2 rounded operator"
+                data-operation
               >
                 *
               </button>
               <button
                 id="four"
                 class="colored-bg font-medium p-2 rounded number"
+                data-number
               >
                 4
               </button>
               <button
                 id="five"
                 class="colored-bg font-medium p-2 rounded number"
+                data-number
               >
                 5
               </button>
@@ -134,55 +141,64 @@
                 id="six"
                 class="colored-bg font-medium p-2 rounded number"
                 value="6"
+                data-number
               >
                 6
               </button>
               <button
                 id="addition"
                 class="colored-bg font-medium p-2 rounded operator"
+                data-operation
               >
                 +
               </button>
               <button
                 id="one"
                 class="colored-bg font-medium p-2 rounded number"
+                data-number
               >
                 1
               </button>
               <button
                 id="two"
                 class="colored-bg font-medium p-2 rounded number"
+                data-number
               >
                 2
               </button>
               <button
                 id="three"
                 class="colored-bg font-medium p-2 rounded number"
+                data-number
               >
                 3
               </button>
               <button
                 id="subtrac"
                 class="colored-bg font-medium p-2 rounded operator"
+                data-operation
               >
                 -
               </button>
               <button
                 id="zero"
                 class="colored-bg font-medium p-2 rounded number"
+                data-number
               >
                 0
               </button>
-              <!-- <button
+              <button
                 class="colored-bg font-medium p-2 rounded operator"
                 value="."
+                data-number
               >
                 .
-              </button> -->
+              </button>
               <button
                 type="submit"
-                class="col-span-3 colored-bg font-medium p-2 rounded operator"
+                class="col-span-2 colored-bg font-medium p-2 rounded operator"
                 id="equal"
+                data-equals
               >
                 =
               </button>
@@ -191,6 +207,6 @@
         </div>
       </section>
     </main>
-    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
